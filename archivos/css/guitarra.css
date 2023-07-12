@@ -1,0 +1,223 @@
+/* Estilos para todo el proyecto */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    background-image: url('https://images5.alphacoders.com/360/360622.jpg');
+    
+}
+header{ 
+    background-color: black;
+    
+}
+li{
+    justify-content: space-between;
+    display: inline-block;
+}
+
+
+main{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+   
+}
+
+footer{
+    background-color: rgb(255, 0, 0);
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.contenedor-centrado {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f9f9f9;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: #000000;
+}
+
+.img {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+
+table {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff0707;
+}
+
+button {
+    padding: 8px;
+    margin:4px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a11111;
+}
+
+a {
+    padding: 8px;
+    margin:4px;
+    background-color: #fa0505;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 85%;
+}
+
+a:hover {
+    background-color: #700707;
+}
+
+
+/* comienza productos */
+.contenedor .contenido {
+    background: rgb(241, 229, 229);
+    color: #000000;
+  
+    text-align: center;
+    font-size: 20px;
+    font-family: 'josefin sans';
+
+    /* Animacion Fade -in */
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fin animacion Fade-in */
+
+main .productos {
+    text-align: center;
+}
+
+/* es .producto controla el orden de cada producto que se muestra */
+main .producto {
+    max-width: 300px;
+    margin-bottom: 20px;
+    align-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Playfair-Display';
+    background: white;
+    display: inline-block;
+    height: auto;
+    text-align: center;
+}
+
+main .producto:hover {
+    transform: translateY(-5px);
+}
+
+main .producto img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+main .producto h3 {
+    font-size: 24px;
+    margin-top: 10px;
+
+    font-family: 'Work Sans', sans-serif'
+
+
+}
+
+main .producto p {
+    margin-top: 10px;
+    font-size: 17.5px;
+    line-height: 1.5;
+
+}
+
+/* esto maneja el diseño de ver detalles */
+main .articulos .producto a {
+    background-color: rgb(219, 93, 93);
+    color: #fff;
+    display: inline-block;
+    padding: 1rem 7rem;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    
+    font-family: 'josefin sans';
+}
+
+/* fin productos */
